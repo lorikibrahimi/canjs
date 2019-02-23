@@ -1,0 +1,1998 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE — ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: docs/can-guides/commitment/recipes/signup-simple/signup.md
+	@page guides/recipes/signup-simple
+######################################################################## -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CanJS - Signup and Login (Simple)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+		<link rel="stylesheet" type="text/css" href="../../static/bundles/bit-docs-site/static.css">
+		<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="/docs/images/canjs_favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="../../../docs/images/canjs_favicon_57x57.png">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../../docs/images/canjs_favicon_57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../../../docs/images/canjs_favicon_72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../../../docs/images/canjs_favicon_114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../../../docs/images/canjs_favicon_128x128.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../../../docs/images/canjs_favicon_144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../../../docs/images/canjs_favicon_152x152.png">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+	  	<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-11', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+</head>
+	<body>
+		<input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+		<label for="nav-trigger">Menu</label>
+	  	<div id="everything">
+  <div id="left" class="column">
+    <div class="top-left">
+      
+          <div class="brand">
+	<div class="logo">
+		<a href="../../../index.html" alt="CanJS"></a>
+		<div class="dropdown project-dropdown">
+			<a href="https://donejs.com/">DoneJS</a>
+			<a href="https://stealjs.com/">StealJS</a>
+			<a href="https://jquerypp.com/">jQuery++</a>
+			<a href="https://funcunit.com/">FuncUnit</a>
+			<a href="https://documentjs.com/">DocumentJS</a>
+		</div>
+	</div>
+	<div class="version">
+		<div class="version-number">
+			5.21.6
+		</div>
+		<div class="dropdown version-dropdown">
+			
+				<a href="https://v4.canjs.com">4.3.0</a>
+			
+				<a href="https://v3.canjs.com">3.13.1</a>
+			
+				<a href="https://v2.canjs.com">2.3.35</a>
+			
+		</div>
+	</div>
+</div>
+<div class="search-bar">
+	<div class="search-wrap" style="display:none;">
+		<span class="search-icon"></span>
+		<input
+			type="text"
+			size="6"
+			class="search"
+			placeholder="Search"
+			autocomplete="off"
+			autocorrect="off"
+			autocapitalize="none"
+			spellcheck="false"/>
+			<span class="search-icon-cancel"></span>
+	</div>
+</div>
+
+
+      
+    </div>
+    <div class="bottom">
+      <div class="nav-menu">
+        <div class="social-side-container">
+          <ul class="social-side">
+  <li>
+    <a class="header-mobile github" href="https://github.com/canjs/canjs" target="_blank"><img class="social-icon-small" src="../../../docs/images/github.png">Github</a>
+  </li>
+  <li>
+    <a class="header-mobile twitter" href="https://twitter.com/canjs" target="_blank"><img class="social-icon-small" src="../../../docs/images/twitter.png">Twitter</a>
+  </li>
+</ul>
+<ul class="social-side">
+  <li>
+    <a class="header-mobile" href="https://gitter.im/canjs/canjs" target="_blank">Chat</a>
+  </li>
+  <li>
+    <a class="header-mobile" href="http://forums.donejs.com/c/canjs" target="_blank">Forum</a>
+  </li>
+</ul>
+
+        </div>
+        
+            
+	<ul>
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../../about.html"
+							title="Learn about CanJS’s mission, technical highlights, who uses CanJS, and our future roadmap.">
+							About
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						parent
+           						expanded">
+						<a class="page"
+							href="../../guides.html"
+							title="Welcome to CanJS! These guides are here to help you master CanJS development, get involved with the CanJS community,
+and contribute back to CanJS.">
+							Guides
+						</a>
+						
+	<ul>
+		
+			
+				
+					<li>
+						<span>essentials</span>
+						
+	<ul>
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../setup.html"
+							title="Learn how to install CanJS in your environment.">
+							Setting Up CanJS
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../technology-overview.html"
+							title="Learn the basics of CanJS’s technology.">
+							Technology Overview
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../html.html"
+							title="Learn how to update HTML and listen to user interactions.">
+							HTML
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../routing.html"
+							title="Learn how to make your application respond to changes in the URL and work with the browser’s back and forward buttons.">
+							Routing
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../data.html"
+							title="Learn how to get, create, update, and delete backend service layer data.">
+							Service Layer
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../debugging.html"
+							title="Learn how to debug CanJS applications.">
+							Debugging
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../forms.html"
+							title="Learn how to create amazing &lt;form&gt;s with CanJS.">
+							Forms
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../testing.html"
+							title="Learn how to test CanJS applications.">
+							Testing
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../logic.html"
+							title="Learn how to write observables in an organized, maintainable, and testable way.">
+							Logic
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../data-extreme.html"
+							title="learn how to work with can-connect">
+							Data
+						</a>
+						
+
+					</li>
+				
+			
+		
+	</ul>
+
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						parent
+           						expanded">
+						<a class="page"
+							href="../recipes.html"
+							title="A listing of small examples that are useful for learning CanJS.">
+							recipes
+						</a>
+						
+	<ul>
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="canvas-clock.html"
+							title="This guide walks you through building a clock with the Canvas API.">
+							Canvas Clock (Simple)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="credit-card-advanced.html"
+							title="This guide walks through building a simple credit card payment form with validations. It doesn’t use
+can-define. Instead it uses Kefir.js streams to make a ViewModel.
+can-kefir is used to make the Kefir streams observable to can-stache.">
+							Credit Card Guide (Advanced)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="credit-card-simple.html"
+							title="This guide walks through building a very simple credit card payment form.  It uses Stripe.js v2 API to create a token
+which can be used to create a charge.  It also performs
+simple validation on the payment form values.">
+							Credit Card Guide (Simple)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="cta-bus-map.html"
+							title="This guide walks you through showing Chicago Transit Authority (CTA) bus locations on a Google Map.">
+							CTA Bus Map (Medium)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="file-navigator-advanced.html"
+							title="This guide walks you through building a file navigation widget that requests data with fetch. It takes about 45 minutes to complete.">
+							File Navigator Guide (Advanced)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="file-navigator-simple.html"
+							title="This guide walks you through building a simple file navigation widget.  It takes about 25 minutes to complete.  It was written with
+CanJS 3.10. Check out the file-navigator-advanced
+for an example that makes AJAX requests for its data and uses can-component.">
+							File Navigator Guide (Simple)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="modals.html"
+							title="This guide shows how to create a multiple modal form.">
+							Multiple Modals (Medium)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="playlist-editor.html"
+							title="Learn how to use YouTube’s API to search for videos and make a playlist.  This makes authenticated requests with OAuth2. It uses jQuery++ for
+drag/drop events. It shows using custom attributes and custom events.  This guide takes
+an hour to complete.">
+							Playlist Editor (Advanced)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="search-list-details.html"
+							title="This guide walks through building a Search, List, Details flow with lazy-loaded routes.">
+							Search, List, Details (Advanced)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="current
+           						
+           						expanded">
+						<a class="page"
+							href="signup-simple.html"
+							title="This guide walks through building simple signup, login forms and a logout button.">
+							Signup and Login (Simple)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="text-editor.html"
+							title="This guide walks you through building a basic rich text editor.">
+							Text Editor (Medium)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="tinder-carousel.html"
+							title="This guide walks you through building a Tinder-like carousel. Learn how to build apps that use dragging user interactions.">
+							Tinder Carousel (Medium)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="todomvc-with-steal.html"
+							title="This tutorial walks through building TodoMVC with StealJS. It includes KeyNote presentations
+covering CanJS core libraries.">
+							TodoMVC with StealJS
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="video-player.html"
+							title="This guide walks you through building custom video controls around a video element.">
+							Video Player (Simple)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="weather-report-advanced.html"
+							title="This guides you through extending the Simple Weather Report Guide to remove imperative code and automatically look up the user’s location using the
+browser’s geolocation API.  Both of these will be done with event streams.
+This guide continues where the Simple Weather Report Guide left off.  It takes about 25 minutes to complete.  It was written with CanJS 4.1.">
+							Weather Report Guide (Advanced)
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="weather-report-simple.html"
+							title="This guide walks you through building a simple weather report widget.  It takes about 25 minutes to complete.  It was written with
+CanJS 4.1.">
+							Weather Report Guide (Simple)
+						</a>
+						
+
+					</li>
+				
+			
+		
+	</ul>
+
+
+					</li>
+				
+			
+		
+			
+				
+					<li>
+						<span>app guides</span>
+						
+	<ul>
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../chat.html"
+							title="This guide will walk you through building a real-time chat application with CanJS’s Core libraries.  It takes about 30 minutes to complete.">
+							Chat Guide
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../todomvc.html"
+							title="This guide will walk you through building a slightly modified version of TodoMVC with CanJS’s Core libraries and can-fixture. It takes about 1 hour to complete.">
+							TodoMVC Guide
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+		
+	</ul>
+
+
+					</li>
+				
+			
+		
+			
+				
+					<li>
+						<span>upgrade</span>
+						
+	<ul>
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../../migrate-3.html"
+							title="This guide walks you through the step-by-step process to upgrade a 2.x app to CanJS 3.">
+							Migrating to CanJS 3
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../../migrate-4.html"
+							title="This guide walks you through the step-by-step process to upgrade a 3.x app to CanJS 4.">
+							Migrating to CanJS 4
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../../migrate-5.html"
+							title="This guide walks you through the process to upgrade a 4.x app to CanJS 5.x.">
+							Migrating to CanJS 5
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../upgrade/using-codemods.html"
+							title="Learn how to migrate your app to CanJS 3 using can-migrate.">
+							Using Codemods
+						</a>
+						
+
+					</li>
+				
+			
+		
+	</ul>
+
+
+					</li>
+				
+			
+		
+			
+				
+					<li>
+						<span>other</span>
+						
+	<ul>
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../api.html"
+							title="This page walks through how to use and understand CanJS’s API documentation.">
+							Reading the Docs (API Guide)
+						</a>
+						
+
+					</li>
+				
+			
+		
+	</ul>
+
+
+					</li>
+				
+			
+		
+	</ul>
+
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../../api.html"
+							title="Welcome to the CanJS API documentation! This page is a CHEAT-SHEET for the most common APIs within CanJS. Read the
+technology-overview page for background on the following APIs.">
+							API Docs
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../../community.html"
+							title="Get involved with one of the most inviting communities on the internet!">
+							Community
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="../contribute.html"
+							title="Learn how to contribute to CanJS!">
+							Contributing
+						</a>
+						
+
+					</li>
+				
+			
+		
+	</ul>
+
+
+        
+      </div>
+      <div class="search-results-container">
+	<div class="search-results-wrap"></div>
+</div>
+
+    </div>
+  </div>
+  <div id="right" class="column">
+    <div class="top-right">
+      <div class="top-right-top">
+	<ul class="top-right-bitovi">
+	  	<li class="dropdown">
+	    	<a href="https://www.bitovi.com" class="bitovi icon-bits">Bitovi</a>
+	    	<ul class="dropdown-menu">
+	      		<li><a href="https://www.bitovi.com/">Bitovi.com</a></li>
+	      		<li><a href="https://www.bitovi.com/blog">Blog</a></li>
+	      		<li><a href="https://www.bitovi.com/design">Design</a></li>
+	      		<li><a href="https://www.bitovi.com/development">Development</a></li>
+	      		<li><a href="https://www.bitovi.com/training">Training</a></li>
+	      		<li><a href="https://www.bitovi.com/open-source">Open Source</a></li>
+	      		<li><a href="https://www.bitovi.com/about">About</a></li>
+	      		<li><a href="https://www.bitovi.com/contact">Contact Us</a></li>
+	    	</ul>
+	  	</li>
+	</ul>
+	<div class="brand">
+		<div class="logo">
+			<a href="../../../index.html" alt="CanJS"></a>
+		</div>
+	</div>
+	<ul class="top-right-links">
+  <li>
+    <a href="https://gitter.im/canjs/canjs">Chat</a>
+  </li>
+  <li>
+    <a href="http://forums.donejs.com/c/canjs">Forum</a>
+  </li>
+  <li>
+    <a class="github-button nav-social" href="https://github.com/canjs/canjs" data-count-href="/canjs/canjs/stargazers" data-show-count="true">Star</a>
+  </li>
+  <li>
+    <a href="https://twitter.com/canjs" class="twitter-follow-button nav-social" data-show-count="true" data-show-screen-name="false">Follow @canjs</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </li>
+</ul>
+</div>
+<div class="breadcrumb">
+	
+		<li><a href="../../../index.html">CanJS</a></li>
+		<li> / </li>
+	
+		<li><a href="../../guides.html">Guides</a></li>
+		<li> / </li>
+	
+		<li><a href="../recipes.html">recipes</a></li>
+		<li> / </li>
+	
+	
+	<li><a href="signup-simple.html">Signup and Login (Simple)</a></li>
+	
+	<li class="breadcrumb-dropdown-separator"> / </li>
+	<li class="breadcrumb-dropdown breadcrumb-on-this-page">
+		<a> On this page</a>
+		<ul class="on-this-page"></ul>
+	</li>
+	<div class="nav-toggle" title="Back to top"></div>
+</div>
+
+
+    </div>
+    <div class="bottom">
+      <article>
+  <section class="title">
+	<div class="page-type">
+		<h1>Signup and Login (Simple)</h1>
+			<ul class="title-social">
+				
+				
+				<li>
+					<a class="button-link" href="//github.com/canjs/canjs/edit/master/docs/can-guides/commitment/recipes/signup-simple/signup.md">Edit on GitHub</a>
+				</li>
+				
+			</ul>
+	</div>
+	<div class="clear-both"></div>
+	
+  
+	<section class="description">
+    <p>This guide walks through building simple signup, login forms and a logout button.</p>
+
+</section>
+
+  
+	
+</section>
+<section class="on-this-page-table">
+	<!--<h2 class="on-this-page-title" data-skip>Page Content</h2>-->
+</section>
+
+
+
+
+
+
+
+
+
+
+  
+    <section class="body">
+    <p>In this guide, you will learn how to:</p>
+<ul>
+<li>Set up a basic CanJS application.</li>
+<li>Collect form data and post it to a service
+endpoint when the form is submitted.</li>
+</ul>
+<p>The final widget looks like:</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="OaOxEW" data-default-tab="js,result" data-user="bitovi" data-pen-title="Signup and Login (Simple) [Finished]" class="codepen">See the Pen <a href="https://codepen.io/bitovi/pen/OaOxEW/">Signup and Login (Simple) [Finished]</a> by Bitovi (<a href="https://codepen.io/bitovi">@bitovi</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p>To use the widget:</p>
+<ol>
+<li><strong>Click</strong> the <em>Sign up</em> link.</li>
+<li><strong>Enter</strong> an <em>email</em> and <em>password</em> and <strong>Click</strong> <em>SIGN UP</em>.  You will be logged in.</li>
+<li><strong>Click</strong> the <em>Log out</em> link. You will be presented with the <em>Sign Up</em> form.</li>
+<li><strong>Click</strong> the <em>Log in</em> link.  <strong>Enter</strong> the same <em>email</em> and <em>password</em> you used to sign up.  <strong>Click</strong> the <em>LOG IN</em> button.  You will be logged in.</li>
+</ol>
+<p><strong>START THIS TUTORIAL BY CLICKING THE “EDIT ON CODEPEN” BUTTON IN THE TOP RIGHT CORNER OF THE FOLLOWING EMBED</strong>:</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="eQeGrL" data-default-tab="css,js,result" data-user="bitovi" data-pen-title="Signup and Login (Simple) [Starter]" class="codepen">See the Pen <a href="https://codepen.io/bitovi/pen/eQeGrL/">Signup and Login (Simple) [Starter]</a> by Bitovi (<a href="https://codepen.io/bitovi">@bitovi</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p>This CodePen includes:</p>
+<ul>
+<li>CanJS (<code>import { ajax, Component, fixture } from &quot;//unpkg.com/can@5/core.mjs&quot;</code> imports <a href="../../can-ajax.html" title="Make an asynchronous HTTP (AJAX) request.">can-ajax</a>, <a href="../../can-component.html" title="Create a custom element that can be used to manage widgets or application logic.">can-component</a>, and <a href="../../can-fixture.html" title="Intercept AJAX requests and simulate the response.">can-fixture</a>).</li>
+<li>Pre-made styles so the app looks pretty. 😍</li>
+</ul>
+<p>The following sections are broken down into:</p>
+<ul>
+<li><strong>The problem</strong> — A description of what the section is trying to accomplish.</li>
+<li><strong>What you need to know</strong> — Information about CanJS that is useful for solving the problem.</li>
+<li><strong>The solution</strong> — The solution to the problem.</li>
+</ul>
+<h2>Understanding the service API</h2>
+<p>This CodePen comes with a mock service layer provided
+by <a href="../../can-fixture.html" title="Intercept AJAX requests and simulate the response.">can-fixture</a>.  It supplies:</p>
+<ul>
+<li><code>POST /api/session</code> for creating sessions (log in).</li>
+<li><code>GET /api/session</code> for getting if there is a session.</li>
+<li><code>DELETE /api/session</code> for deleting a session (log out).</li>
+<li><code>POST /api/users</code> for creating users.</li>
+</ul>
+<p>To tell if the current client is logged in:</p>
+<pre><code class="language-http">Request:
+
+GET /api/session
+</code></pre>
+<pre><code class="language-http">Response:
+
+STATUS: 200
+{user: {email: &quot;someone@email.com&quot;}}
+</code></pre>
+<p>If someone is logged out:</p>
+<pre><code class="language-http">Request:
+
+GET /api/session
+</code></pre>
+<pre><code class="language-http">Response:
+
+STATUS: 404
+{message: &quot;No session&quot;}
+</code></pre>
+<p>To log someone in:</p>
+<pre><code class="language-http">Request:
+
+POST /api/session
+{user: {email: &quot;someone@email.com&quot;, password: &quot;123&quot;}}
+</code></pre>
+<pre><code class="language-http">Response:
+
+STATUS: 200
+{user: {email: &quot;someone@email.com&quot;}}
+</code></pre>
+<p>If someone logs in with invalid credentials:</p>
+<pre><code class="language-http">Request:
+
+POST /api/session
+{user: {email: &quot;WRONG&quot;, password: &quot;WRONG&quot;}}
+</code></pre>
+<pre><code class="language-http">Response:
+
+STATUS: 401 unauthorized
+{ message: &quot;Unauthorized&quot;}
+</code></pre>
+<p>To log someone out:</p>
+<pre><code class="language-http">Request:
+
+DELETE /api/session
+</code></pre>
+<pre><code class="language-http">Response:
+
+STATUS: 200
+{}
+</code></pre>
+<p>To create a user:</p>
+<pre><code class="language-http">Request:
+
+POST /api/users
+
+{email: &quot;someone@email.com&quot;, password: &quot;123&quot;}
+</code></pre>
+<pre><code class="language-http">Response:
+
+STATUS: 200
+{email: &quot;someone@email.com&quot;}
+</code></pre>
+<h2>Setup</h2>
+<h3>The problem</h3>
+<p>When someone adds <code>&lt;signup-login&gt;&lt;/signup-login&gt;</code> to their HTML, we want the following HTML
+to show up:</p>
+<pre><code class="language-html">&lt;p class=&quot;welcome-message&quot;&gt;
+  Welcome Someone.
+  &lt;a href=&quot;javascript://&quot;&gt;Log out&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;form&gt;
+  &lt;h2&gt;Sign Up&lt;/h2&gt;
+
+  &lt;input placeholder=&quot;email&quot; /&gt;
+
+  &lt;input type=&quot;password&quot;
+       placeholder=&quot;password&quot; /&gt;
+
+  &lt;button&gt;Sign Up&lt;/button&gt;
+
+  &lt;aside&gt;
+    Have an account?
+    &lt;a href=&quot;javascript://&quot;&gt;Log in&lt;/a&gt;
+  &lt;/aside&gt;
+&lt;/form&gt;
+</code></pre>
+<h3>What you need to know</h3>
+<p>To set up a basic CanJS application, you define a custom element in JavaScript and
+use the custom element in your page’s <code>HTML</code>.</p>
+<p>To define a custom element, extend <a href="../../can-component.html" title="Create a custom element that can be used to manage widgets or application logic.">can-component</a> with a <a href="../../can-component.prototype.tag.html" title="Specifies the HTML tag (or node-name) the can-component will be created on.">tag</a>
+that matches the name of your custom element.</p>
+<p>For example, we will use <code>&lt;signup-login&gt;</code> as our custom tag:</p>
+<pre><code class="language-js">Component.extend({
+  tag: &quot;signup-login&quot;
+});
+</code></pre>
+<p>But this doesn’t do anything.  Components add their own HTML through their <a href="../../can-component.prototype.view.html" title="Provides a view to render directly within the component’s element. The view is rendered with the
+component’s can-component::ViewModel instance.  &lt;content/&gt; elements within the view are replaced by the source elements within the component’s tag.">view</a>
+property like this:</p>
+<pre><code class="language-js">Component.extend({
+  tag: &quot;signup-login&quot;,
+  view: `
+    &lt;h2&gt;Sign Up or Log In&lt;/h2&gt;
+  `,
+  ViewModel: {
+  }
+});
+</code></pre>
+<blockquote>
+<p><strong>NOTE:</strong> We’ll make use of the <code>ViewModel</code> property later.</p>
+</blockquote>
+<h3>The solution</h3>
+<p>Update the <strong>JavaScript</strong> tab to:</p>
+<pre><code class="language-js">import { ajax, Component, fixture } from &quot;//unpkg.com/can@5/core.mjs&quot;;
+
+fixture(&quot;GET /api/session&quot;, function(request, response) {
+    const session = localStorage.getItem(&quot;session&quot;);
+    if (session) {
+        response(JSON.parse(session));
+    } else {
+        response(404, { message: &quot;No session&quot; }, {}, &quot;unauthorized&quot;);
+    }
+});
+fixture(&quot;POST /api/users&quot;, function(request, response) {
+    const session = {
+        user: { email: request.data.email }
+    };
+    localStorage.setItem(&quot;user&quot;, JSON.stringify(request.data));
+    localStorage.setItem(&quot;session&quot;, JSON.stringify(session));
+
+    return session.user;
+});
+fixture(&quot;DELETE /api/session&quot;, function() {
+    localStorage.removeItem(&quot;session&quot;);
+    return {};
+});
+
+fixture(&quot;POST /api/session&quot;, function(request, response) {
+    const userData = localStorage.getItem(&quot;user&quot;);
+    if (userData) {
+        const user = JSON.parse(userData);
+        const requestUser = request.data.user;
+        if (
+            user.email === requestUser.email &amp;&amp;
+            user.password === requestUser.password
+        ) {
+            return request.data;
+        } else {
+            response(401, { message: &quot;Unauthorized&quot; }, {}, &quot;unauthorized&quot;);
+        }
+    }
+    response(401, { message: &quot;Unauthorized&quot; }, {}, &quot;unauthorized&quot;);
+});
+
+Component.extend({
+    tag: &quot;signup-login&quot;,
+    view: `
+        &lt;p class=&quot;welcome-message&quot;&gt;
+            Welcome Someone.
+            &lt;a href=&quot;javascript://&quot;&gt;Log out&lt;/a&gt;
+        &lt;/p&gt;
+
+        &lt;form&gt;
+            &lt;h2&gt;Sign Up&lt;/h2&gt;
+
+            &lt;input placeholder=&quot;email&quot; /&gt;
+
+            &lt;input type=&quot;password&quot;
+                     placeholder=&quot;password&quot; /&gt;
+
+            &lt;button&gt;Sign Up&lt;/button&gt;
+
+            &lt;aside&gt;
+                Have an account?
+                &lt;a href=&quot;javascript://&quot;&gt;Log in&lt;/a&gt;
+            &lt;/aside&gt;
+        &lt;/form&gt;
+    `,
+    ViewModel: {}
+});
+
+</code></pre>
+<div line-highlight='42-67,only'></div>
+<p>Update the <strong>HTML</strong> tab to:</p>
+<pre><code class="language-html">&lt;signup-login&gt;&lt;/signup-login&gt;
+
+</code></pre>
+<div line-highlight='1,only'></div>
+<h2>Check if the user is logged in</h2>
+<h3>The problem</h3>
+<p>Let’s make a request to <code>GET /api/session</code> to know if there is a
+session.  If there is a session, we will print out the user’s email address.  If there
+is not a session, we will show the <em>Sign Up</em> form.</p>
+<p>We’ll keep the session data within a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a> on
+the <code>sessionPromise</code> property. The following simulates a logged in user:</p>
+<pre><code class="language-js">viewModel.sessionPromise = Promise.resolve({user: {email: &quot;someone@email.com&quot;}})
+</code></pre>
+<h3>What you need to know</h3>
+<ul>
+<li>The <a href="../../can-define.types.default.html" title="Returns the default value for instances of the defined type.  The default value is defined on demand, when the property
+is read for the first time.">default</a> property definition can return the initial value of a property like:
+<pre><code class="language-js">Component.extend({
+  tag: &quot;signup-login&quot;,
+  view: `
+    {{this.myProperty}} &lt;!-- renders “This string” --&gt;
+  `,
+  ViewModel: {
+    myProperty: {
+      default: function() {
+        return &quot;This string&quot;
+      }
+    }
+  }
+});
+</code></pre></li>
+<li><a href="../../can-ajax.html" title="Make an asynchronous HTTP (AJAX) request.">can-ajax</a> can make requests to a URL like:
+<pre><code class="language-js">ajax({
+  url: &quot;http://query.yahooapis.com/v1/public/yql&quot;,
+  data: {
+    format: &quot;json&quot;,
+    q: 'select * from geo.places where text=&quot;sunnyvale, ca&quot;'
+  }
+}) //-&gt; Promise
+</code></pre></li>
+<li>Use <a href="../../can-stache.helpers.if.html" title="can-stache.helpers.if">{{# if(value) }}</a> to do <code>if/else</code> branching in <a href="../../can-stache.html" title="Live binding templates.">can-stache</a>.
+<pre><code class="language-html">{{# if(this.myProperty) }}
+  Value is truth-y
+{{ else }}
+  Value is false-y
+{{/ if }}
+</code></pre></li>
+<li><a href="../../can-stache.html#Readingpromises" title="Live binding templates.">Promises are observable in can-stache.</a> For the promise <code>myPromise</code>:
+<ul>
+<li><code>myPromise.value</code> is the resolved value of the promise</li>
+<li><code>myPromise.isPending</code> is true if the promise has not been resolved or rejected</li>
+<li><code>myPromise.isResolved</code> is true if the promise has resolved</li>
+<li><code>myPromise.isRejected</code> is true if the promise was rejected</li>
+<li><code>myPromise.reason</code> is the rejected value of the promise</li>
+</ul></li>
+</ul>
+<h3>The solution</h3>
+<p>Update the <strong>JavaScript</strong> tab to:</p>
+<pre><code class="language-js">import { ajax, Component, fixture } from &quot;//unpkg.com/can@5/core.mjs&quot;;
+
+fixture(&quot;GET /api/session&quot;, function(request, response) {
+    const session = localStorage.getItem(&quot;session&quot;);
+    if (session) {
+        response(JSON.parse(session));
+    } else {
+        response(404, { message: &quot;No session&quot; }, {}, &quot;unauthorized&quot;);
+    }
+});
+fixture(&quot;POST /api/users&quot;, function(request, response) {
+    const session = {
+        user: { email: request.data.email }
+    };
+    localStorage.setItem(&quot;user&quot;, JSON.stringify(request.data));
+    localStorage.setItem(&quot;session&quot;, JSON.stringify(session));
+
+    return session.user;
+});
+fixture(&quot;DELETE /api/session&quot;, function() {
+    localStorage.removeItem(&quot;session&quot;);
+    return {};
+});
+
+fixture(&quot;POST /api/session&quot;, function(request, response) {
+    const userData = localStorage.getItem(&quot;user&quot;);
+    if (userData) {
+        const user = JSON.parse(userData);
+        const requestUser = request.data.user;
+        if (
+            user.email === requestUser.email &amp;&amp;
+            user.password === requestUser.password
+        ) {
+            return request.data;
+        } else {
+            response(401, { message: &quot;Unauthorized&quot; }, {}, &quot;unauthorized&quot;);
+        }
+    }
+    response(401, { message: &quot;Unauthorized&quot; }, {}, &quot;unauthorized&quot;);
+});
+
+Component.extend({
+    tag: &quot;signup-login&quot;,
+    view: `
+        {{# if(this.sessionPromise.value) }}
+
+            &lt;p class=&quot;welcome-message&quot;&gt;
+                Welcome {{ this.sessionPromise.value.user.email }}.
+                &lt;a href=&quot;javascript://&quot;&gt;Log out&lt;/a&gt;
+            &lt;/p&gt;
+
+        {{ else }}
+
+            &lt;form&gt;
+                &lt;h2&gt;Sign Up&lt;/h2&gt;
+
+                &lt;input placeholder=&quot;email&quot; /&gt;
+
+                &lt;input type=&quot;password&quot;
+                         placeholder=&quot;password&quot; /&gt;
+
+                &lt;button&gt;Sign Up&lt;/button&gt;
+
+                &lt;aside&gt;
+                    Have an account?
+                    &lt;a href=&quot;javascript://&quot;&gt;Log in&lt;/a&gt;
+                &lt;/aside&gt;
+            &lt;/form&gt;
+
+        {{/ if }}
+    `,
+    ViewModel: {
+        sessionPromise: {
+            default: function() {
+                return ajax({
+                    url: &quot;/api/session&quot;
+                });
+            }
+        }
+    }
+});
+
+</code></pre>
+<div line-highlight='45,52,70,73-79,only'></div>
+<h2>Signup form</h2>
+<h3>The problem</h3>
+<p>Let’s allow the user to enter an <em>email</em> and <em>password</em> and click <em>Sign Up</em>.  When this happens,
+we’ll <code>POST</code> this data to <code>/api/users</code>.  Once the user is created, we’ll want to update the <code>sessionPromise</code>
+property to have a promise with a <em>session-like</em> object.</p>
+<p>A promise with a <em>session-like</em> object looks like:</p>
+<pre><code class="language-js">{user: {email: &quot;someone@email.com&quot;}}
+</code></pre>
+<h3>What you need to know</h3>
+<ul>
+<li><p>A ViewModel allows you to define a property with its <a href="../../can-define.types.html" title="Specify a type to convert values to. Type coercion only applies when setting a property.
+All types leave null and undefined as is except for
+the &quot;htmlbool&quot; type converter.">type</a> like so:</p>
+<pre><code class="language-js">ViewModel: {
+  name: &quot;string&quot;,
+  password: &quot;number&quot;
+}
+</code></pre></li>
+<li><p>The <a href="../../can-stache-bindings.toParent.html" title="One-way bind a value from the viewModel or element to the parent scope.">key:to</a> binding can set an input’s <code>value</code> to
+a ViewModel property like:</p>
+<pre><code class="language-html">&lt;input value:to=&quot;this.name&quot; /&gt;
+</code></pre></li>
+<li><p>Use <a href="../../can-stache-bindings.event.html" title="Respond to events on elements or component ViewModels.">on:event</a> to listen to an event on an element and call a method in <a href="../../can-stache.html" title="Live binding templates.">can-stache</a>.  For example, the following calls <code>doSomething()</code> when the <code>&lt;div&gt;</code> is clicked:</p>
+<pre><code class="language-html">&lt;div on:click=&quot;this.doSomething(scope.event)&quot;&gt; ... &lt;/div&gt;
+</code></pre>
+<p>Notice that it also passed the event object with <a href="../../can-stache/keys/scope.html#scope_event" title="The template context">scope.event</a>.</p></li>
+<li><p>To prevent a form from submitting, call <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault">event.preventDefault()</a>.</p></li>
+<li><p><a href="../../can-ajax.html" title="Make an asynchronous HTTP (AJAX) request.">can-ajax</a> can make <code>POST</code> requests to a URL like:</p></li>
+</ul>
+<pre><code class="language-js">ajax({
+  url: &quot;http://query.yahooapis.com/v1/public/yql&quot;,
+  type: &quot;post&quot;,
+  data: {
+    format: &quot;json&quot;,
+    q: 'select * from geo.places where text=&quot;sunnyvale, ca&quot;'
+  }
+}) //-&gt; Promise
+</code></pre>
+<div line-highlight='3'></div>
+<ul>
+<li><p>Use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then">then()</a> method on a promise to map the source promise to another promise value.</p>
+<pre><code class="language-js">const source = Promise.resolve({email: &quot;justin@bitovi.com&quot;})
+
+const result = source.then(function(userData) {
+  return {user: userData}
+});
+</code></pre>
+<div line-highlight='3-5'></div></li>
+</ul>
+<h3>The solution</h3>
+<p>Update the <strong>JavaScript</strong> tab to:</p>
+<pre><code class="language-js">import { ajax, Component, fixture } from &quot;//unpkg.com/can@5/core.mjs&quot;;
+
+fixture(&quot;GET /api/session&quot;, function(request, response) {
+    const session = localStorage.getItem(&quot;session&quot;);
+    if (session) {
+        response(JSON.parse(session));
+    } else {
+        response(404, { message: &quot;No session&quot; }, {}, &quot;unauthorized&quot;);
+    }
+});
+fixture(&quot;POST /api/users&quot;, function(request, response) {
+    const session = {
+        user: { email: request.data.email }
+    };
+    localStorage.setItem(&quot;user&quot;, JSON.stringify(request.data));
+    localStorage.setItem(&quot;session&quot;, JSON.stringify(session));
+
+    return session.user;
+});
+fixture(&quot;DELETE /api/session&quot;, function() {
+    localStorage.removeItem(&quot;session&quot;);
+    return {};
+});
+
+fixture(&quot;POST /api/session&quot;, function(request, response) {
+    const userData = localStorage.getItem(&quot;user&quot;);
+    if (userData) {
+        const user = JSON.parse(userData);
+        const requestUser = request.data.user;
+        if (
+            user.email === requestUser.email &amp;&amp;
+            user.password === requestUser.password
+        ) {
+            return request.data;
+        } else {
+            response(401, { message: &quot;Unauthorized&quot; }, {}, &quot;unauthorized&quot;);
+        }
+    }
+    response(401, { message: &quot;Unauthorized&quot; }, {}, &quot;unauthorized&quot;);
+});
+
+Component.extend({
+    tag: &quot;signup-login&quot;,
+    view: `
+        {{# if(this.sessionPromise.value) }}
+
+            &lt;p class=&quot;welcome-message&quot;&gt;
+                Welcome {{ this.sessionPromise.value.user.email }}.
+                &lt;a href=&quot;javascript://&quot;&gt;Log out&lt;/a&gt;
+            &lt;/p&gt;
+
+        {{ else }}
+
+            &lt;form on:submit=&quot;this.signUp(scope.event)&quot;&gt;
+                &lt;h2&gt;Sign Up&lt;/h2&gt;
+
+                &lt;input placeholder=&quot;email&quot; value:to=&quot;this.email&quot; /&gt;
+
+                &lt;input type=&quot;password&quot;
+                         placeholder=&quot;password&quot; value:to=&quot;this.password&quot; /&gt;
+
+                &lt;button&gt;Sign Up&lt;/button&gt;
+
+                &lt;aside&gt;
+                    Have an account?
+                    &lt;a href=&quot;javascript://&quot;&gt;Log in&lt;/a&gt;
+                &lt;/aside&gt;
+            &lt;/form&gt;
+
+        {{/ if }}
+    `,
+    ViewModel: {
+        sessionPromise: {
+            default: function() {
+                return ajax({
+                    url: &quot;/api/session&quot;
+                });
+            }
+        },
+
+        email: &quot;string&quot;,
+        password: &quot;string&quot;,
+        signUp: function(event) {
+            event.preventDefault();
+            this.sessionPromise = ajax({
+                url: &quot;/api/users&quot;,
+                type: &quot;post&quot;,
+                data: {
+                    email: this.email,
+                    password: this.password
+                }
+            }).then(function(user) {
+                return {user: user};
+            });
+        }
+    }
+});
+
+</code></pre>
+<div line-highlight='54,57,60,81-95,only'></div>
+<h2>Log out button</h2>
+<h3>The problem</h3>
+<p>Let’s update the app to log the user out when the <em>Log out</em> button is clicked.  We can
+do this by making a <code>DELETE</code> request to <code>/api/session</code> and updating the <code>sessionPromise</code>
+property to have a rejected value.</p>
+<h3>What you need to know</h3>
+<ul>
+<li><p>Use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then">then()</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/reject">Promise.reject()</a> to map a source promise to a rejected promise.</p>
+<pre><code class="language-js">const source = Promise.resolve({});
+
+const result = source.then(function(userData) {
+  return Promise.reject({message: &quot;Unauthorized&quot;});
+});
+
+result.catch(function(reason) {
+    reason.message //-&gt; &quot;Unauthorized&quot;;
+});
+</code></pre>
+<div line-highlight='3-5'></div></li>
+</ul>
+<h3>The solution</h3>
+<p>Update the <strong>JavaScript</strong> tab to:</p>
+<pre><code class="language-js">import { ajax, Component, fixture } from &quot;//unpkg.com/can@5/core.mjs&quot;;
+
+fixture(&quot;GET /api/session&quot;, function(request, response) {
+    const session = localStorage.getItem(&quot;session&quot;);
+    if (session) {
+        response(JSON.parse(session));
+    } else {
+        response(404, { message: &quot;No session&quot; }, {}, &quot;unauthorized&quot;);
+    }
+});
+fixture(&quot;POST /api/users&quot;, function(request, response) {
+    const session = {
+        user: { email: request.data.email }
+    };
+    localStorage.setItem(&quot;user&quot;, JSON.stringify(request.data));
+    localStorage.setItem(&quot;session&quot;, JSON.stringify(session));
+
+    return session.user;
+});
+fixture(&quot;DELETE /api/session&quot;, function() {
+    localStorage.removeItem(&quot;session&quot;);
+    return {};
+});
+
+fixture(&quot;POST /api/session&quot;, function(request, response) {
+    const userData = localStorage.getItem(&quot;user&quot;);
+    if (userData) {
+        const user = JSON.parse(userData);
+        const requestUser = request.data.user;
+        if (
+            user.email === requestUser.email &amp;&amp;
+            user.password === requestUser.password
+        ) {
+            return request.data;
+        } else {
+            response(401, { message: &quot;Unauthorized&quot; }, {}, &quot;unauthorized&quot;);
+        }
+    }
+    response(401, { message: &quot;Unauthorized&quot; }, {}, &quot;unauthorized&quot;);
+});
+
+Component.extend({
+    tag: &quot;signup-login&quot;,
+    view: `
+        {{# if(this.sessionPromise.value) }}
+
+            &lt;p class=&quot;welcome-message&quot;&gt;
+                Welcome {{ this.sessionPromise.value.user.email }}.
+                &lt;a href=&quot;javascript://&quot; on:click=&quot;this.logOut()&quot;&gt;Log out&lt;/a&gt;
+            &lt;/p&gt;
+
+        {{ else }}
+
+            &lt;form on:submit=&quot;this.signUp(scope.event)&quot;&gt;
+                &lt;h2&gt;Sign Up&lt;/h2&gt;
+
+                &lt;input placeholder=&quot;email&quot; value:to=&quot;this.email&quot; /&gt;
+
+                &lt;input type=&quot;password&quot;
+                         placeholder=&quot;password&quot; value:to=&quot;this.password&quot; /&gt;
+
+                &lt;button&gt;Sign Up&lt;/button&gt;
+
+                &lt;aside&gt;
+                    Have an account?
+                    &lt;a href=&quot;javascript://&quot;&gt;Log in&lt;/a&gt;
+                &lt;/aside&gt;
+            &lt;/form&gt;
+
+        {{/ if }}
+    `,
+    ViewModel: {
+        sessionPromise: {
+            default: function() {
+                return ajax({
+                    url: &quot;/api/session&quot;
+                });
+            }
+        },
+
+        email: &quot;string&quot;,
+        password: &quot;string&quot;,
+        signUp: function(event) {
+            event.preventDefault();
+            this.sessionPromise = ajax({
+                url: &quot;/api/users&quot;,
+                type: &quot;post&quot;,
+                data: {
+                    email: this.email,
+                    password: this.password
+                }
+            }).then(function(user) {
+                return {user: user};
+            });
+        },
+
+        logOut: function() {
+            this.sessionPromise = ajax({
+                url: &quot;/api/session&quot;,
+                type: &quot;delete&quot;
+            }).then(function() {
+                return Promise.reject({message: &quot;Unauthorized&quot;});
+            });
+        }
+    }
+});
+
+</code></pre>
+<div line-highlight='49,97-104,only'></div>
+<h2>Login form</h2>
+<h3>The problem</h3>
+<p>Let’s add a <em>Log In</em> form for the user:</p>
+<pre><code class="language-html">&lt;form&gt;
+  &lt;h2&gt;Log In&lt;/h2&gt;
+
+  &lt;input placeholder=&quot;email&quot; /&gt;
+
+  &lt;input type=&quot;password&quot;
+     placeholder=&quot;password&quot; /&gt;
+
+  &lt;button&gt;Log In&lt;/button&gt;
+
+  &lt;div class=&quot;error&quot;&gt;error message&lt;/div&gt;
+
+  &lt;aside&gt;
+    Don’t have an account?
+    &lt;a href=&quot;javascript://&quot;&gt;Sign up&lt;/a&gt;
+  &lt;/aside&gt;
+&lt;/form&gt;
+</code></pre>
+<p>The user should be able to go back and forth between the <em>Sign Up</em> page and the <em>Log In</em>
+page. We’ll do this by changing a <code>page</code> property to <code>&quot;signup&quot;</code> or <code>&quot;login&quot;</code>.</p>
+<p>We’ll also implement the <em>Log In</em> form’s functionality.  When a session is created,
+we’ll want to <code>POST</code> session data to <code>/api/session</code> and update <code>this.sessionPromise</code> accordingly.</p>
+<h3>What you need to know</h3>
+<ul>
+<li>Use <a href="../../can-stache.helpers.is.html" title="">{{# eq(value1, value2) }}</a> to test equality in <a href="../../can-stache.html" title="Live binding templates.">can-stache</a>.
+<pre><code class="language-html">{{# eq(this.value1, &quot;value 2&quot;) }}
+  Values are equal
+{{ else }}
+  Values are not equal
+{{/ if }}
+</code></pre></li>
+<li>You can <a href="../../can-stache-bindings.event.html#on_VIEW_MODEL_OR_DOM_EVENT__KEY_VALUE_" title="Respond to events on elements or component ViewModels.">set a property value within an event binding</a> like:
+<pre><code class="language-html">&lt;a on:click=&quot;this.aProperty = 'a value'&quot;&gt;Link&lt;/a&gt;
+</code></pre></li>
+</ul>
+<h3>The solution</h3>
+<p>Update the <strong>JavaScript</strong> tab to:</p>
+<pre><code class="language-js">import { ajax, Component, fixture } from &quot;//unpkg.com/can@5/core.mjs&quot;;
+
+fixture(&quot;GET /api/session&quot;, function(request, response) {
+    const session = localStorage.getItem(&quot;session&quot;);
+    if (session) {
+        response(JSON.parse(session));
+    } else {
+        response(404, { message: &quot;No session&quot; }, {}, &quot;unauthorized&quot;);
+    }
+});
+fixture(&quot;POST /api/users&quot;, function(request, response) {
+    const session = {
+        user: { email: request.data.email }
+    };
+    localStorage.setItem(&quot;user&quot;, JSON.stringify(request.data));
+    localStorage.setItem(&quot;session&quot;, JSON.stringify(session));
+
+    return session.user;
+});
+fixture(&quot;DELETE /api/session&quot;, function() {
+    localStorage.removeItem(&quot;session&quot;);
+    return {};
+});
+
+fixture(&quot;POST /api/session&quot;, function(request, response) {
+    const userData = localStorage.getItem(&quot;user&quot;);
+    if (userData) {
+        const user = JSON.parse(userData);
+        const requestUser = request.data.user;
+        if (
+            user.email === requestUser.email &amp;&amp;
+            user.password === requestUser.password
+        ) {
+            return request.data;
+        } else {
+            response(401, { message: &quot;Unauthorized&quot; }, {}, &quot;unauthorized&quot;);
+        }
+    }
+    response(401, { message: &quot;Unauthorized&quot; }, {}, &quot;unauthorized&quot;);
+});
+
+Component.extend({
+    tag: &quot;signup-login&quot;,
+    view: `
+        {{# if(this.sessionPromise.value) }}
+
+            &lt;p class=&quot;welcome-message&quot;&gt;
+                Welcome {{ this.sessionPromise.value.user.email }}.
+                &lt;a href=&quot;javascript://&quot; on:click=&quot;this.logOut()&quot;&gt;Log out&lt;/a&gt;
+            &lt;/p&gt;
+
+        {{ else }}
+            {{# eq(this.page, &quot;signup&quot;) }}
+
+                &lt;form on:submit=&quot;this.signUp(scope.event)&quot;&gt;
+                    &lt;h2&gt;Sign Up&lt;/h2&gt;
+
+                    &lt;input placeholder=&quot;email&quot; value:to=&quot;this.email&quot; /&gt;
+
+                    &lt;input type=&quot;password&quot;
+                             placeholder=&quot;password&quot; value:to=&quot;this.password&quot; /&gt;
+
+                    &lt;button&gt;Sign Up&lt;/button&gt;
+
+                    &lt;aside&gt;
+                        Have an account?
+                        &lt;a href=&quot;javascript://&quot; on:click=&quot;this.page = 'login'&quot;&gt;Log in&lt;/a&gt;
+                    &lt;/aside&gt;
+                &lt;/form&gt;
+
+            {{ else }}
+
+                &lt;form on:submit=&quot;this.logIn(scope.event)&quot;&gt;
+                    &lt;h2&gt;Log In&lt;/h2&gt;
+
+                    &lt;input placeholder=&quot;email&quot; value:to=&quot;this.email&quot; /&gt;
+
+                    &lt;input type=&quot;password&quot;
+                         placeholder=&quot;password&quot; value:to=&quot;this.password&quot; /&gt;
+
+                    &lt;button&gt;Log In&lt;/button&gt;
+
+                    &lt;aside&gt;
+                        Don’t have an account?
+                        &lt;a href=&quot;javascript://&quot; on:click=&quot;this.page = 'signup'&quot;&gt;Sign up&lt;/a&gt;
+                    &lt;/aside&gt;
+                &lt;/form&gt;
+
+            {{/ eq }}
+
+        {{/ if }}
+    `,
+    ViewModel: {
+        sessionPromise: {
+            default: function() {
+                return ajax({
+                    url: &quot;/api/session&quot;
+                });
+            }
+        },
+
+        email: &quot;string&quot;,
+        password: &quot;string&quot;,
+        signUp: function(event) {
+            event.preventDefault();
+            this.sessionPromise = ajax({
+                url: &quot;/api/users&quot;,
+                type: &quot;post&quot;,
+                data: {
+                    email: this.email,
+                    password: this.password
+                }
+            }).then(function(user) {
+                return {user: user};
+            });
+        },
+
+        logOut: function() {
+            this.sessionPromise = ajax({
+                url: &quot;/api/session&quot;,
+                type: &quot;delete&quot;
+            }).then(function() {
+                return Promise.reject({message: &quot;Unauthorized&quot;});
+            });
+        },
+
+        page: {default: &quot;login&quot;},
+        logIn: function(event) {
+            event.preventDefault();
+            this.sessionPromise = ajax({
+                url: &quot;/api/session&quot;,
+                type: &quot;post&quot;,
+                data: {
+                    user: {
+                        email: this.email,
+                        password: this.password
+                    }
+                }
+            });
+        }
+    }
+});
+
+</code></pre>
+<div line-highlight='53,67,71-89,127-140,only'></div>
+<h2>Login errors</h2>
+<h3>The problem</h3>
+<p>If the user tried to login, but the server responded with an error message, let’s
+display that error message.</p>
+<pre><code class="language-html">&lt;div class=&quot;error&quot;&gt;An error message&lt;/div&gt;
+</code></pre>
+<p>We’ll do this by <code>catch</code>ing the create-session request. If
+the request fails, we will set a <code>logInError</code> property with the server’s response data.</p>
+<h3>What you need to know</h3>
+<ul>
+<li><p>Use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch">catch()</a> to handle when a promise is rejected:</p>
+<pre><code class="language-js">const source = Promise.reject({message: &quot;foo&quot;})
+source.catch(function(reason) {
+    reason //-&gt; {message: &quot;foo&quot;}
+})
+</code></pre>
+<div line-highlight='2'></div></li>
+<li><p>Use the <code>&quot;any&quot;</code> <a href="../../can-define.types.html" title="Specify a type to convert values to. Type coercion only applies when setting a property.
+All types leave null and undefined as is except for
+the &quot;htmlbool&quot; type converter.">type</a> to define a property of indeterminate type:</p>
+<pre><code class="language-js">const AppViewModel = DefineMap.extend({
+  myProperty: &quot;any&quot;
+});
+const viewModel = new AppViewModel({});
+viewModel.myProperty = ANYTHING;
+</code></pre>
+<div line-highlight='2'></div></li>
+</ul>
+<h3>The solution</h3>
+<p>Update the <strong>JavaScript</strong> tab to:</p>
+<pre><code class="language-js">import { ajax, Component, fixture } from &quot;//unpkg.com/can@5/core.mjs&quot;;
+
+fixture(&quot;GET /api/session&quot;, function(request, response) {
+    const session = localStorage.getItem(&quot;session&quot;);
+    if (session) {
+        response(JSON.parse(session));
+    } else {
+        response(404, { message: &quot;No session&quot; }, {}, &quot;unauthorized&quot;);
+    }
+});
+fixture(&quot;POST /api/users&quot;, function(request, response) {
+    const session = {
+        user: { email: request.data.email }
+    };
+    localStorage.setItem(&quot;user&quot;, JSON.stringify(request.data));
+    localStorage.setItem(&quot;session&quot;, JSON.stringify(session));
+
+    return session.user;
+});
+fixture(&quot;DELETE /api/session&quot;, function() {
+    localStorage.removeItem(&quot;session&quot;);
+    return {};
+});
+
+fixture(&quot;POST /api/session&quot;, function(request, response) {
+    const userData = localStorage.getItem(&quot;user&quot;);
+    if (userData) {
+        const user = JSON.parse(userData);
+        const requestUser = request.data.user;
+        if (
+            user.email === requestUser.email &amp;&amp;
+            user.password === requestUser.password
+        ) {
+            return request.data;
+        } else {
+            response(401, { message: &quot;Unauthorized&quot; }, {}, &quot;unauthorized&quot;);
+        }
+    }
+    response(401, { message: &quot;Unauthorized&quot; }, {}, &quot;unauthorized&quot;);
+});
+
+Component.extend({
+    tag: &quot;signup-login&quot;,
+    view: `
+        {{# if(this.sessionPromise.value) }}
+
+            &lt;p class=&quot;welcome-message&quot;&gt;
+                Welcome {{ this.sessionPromise.value.user.email }}.
+                &lt;a href=&quot;javascript://&quot; on:click=&quot;this.logOut()&quot;&gt;Log out&lt;/a&gt;
+            &lt;/p&gt;
+
+        {{ else }}
+            {{# eq(this.page, &quot;signup&quot;) }}
+
+                &lt;form on:submit=&quot;this.signUp(scope.event)&quot;&gt;
+                    &lt;h2&gt;Sign Up&lt;/h2&gt;
+
+                    &lt;input placeholder=&quot;email&quot; value:to=&quot;this.email&quot; /&gt;
+
+                    &lt;input type=&quot;password&quot;
+                             placeholder=&quot;password&quot; value:to=&quot;this.password&quot; /&gt;
+
+                    &lt;button&gt;Sign Up&lt;/button&gt;
+
+                    &lt;aside&gt;
+                        Have an account?
+                        &lt;a href=&quot;javascript://&quot; on:click=&quot;this.page = 'login'&quot;&gt;Log in&lt;/a&gt;
+                    &lt;/aside&gt;
+                &lt;/form&gt;
+
+            {{ else }}
+
+                &lt;form on:submit=&quot;this.logIn(scope.event)&quot;&gt;
+                    &lt;h2&gt;Log In&lt;/h2&gt;
+
+                    &lt;input placeholder=&quot;email&quot; value:to=&quot;this.email&quot; /&gt;
+
+                    &lt;input type=&quot;password&quot;
+                         placeholder=&quot;password&quot; value:to=&quot;this.password&quot; /&gt;
+
+                    &lt;button&gt;Log In&lt;/button&gt;
+
+                    {{# if(this.logInError) }}
+                        &lt;div class=&quot;error&quot;&gt;{{ this.logInError.message }}&lt;/div&gt;
+                    {{/ if }}
+
+                    &lt;aside&gt;
+                        Don’t have an account?
+                        &lt;a href=&quot;javascript://&quot; on:click=&quot;this.page = 'signup'&quot;&gt;Sign up&lt;/a&gt;
+                    &lt;/aside&gt;
+                &lt;/form&gt;
+
+            {{/ eq }}
+
+        {{/ if }}
+    `,
+    ViewModel: {
+        sessionPromise: {
+            default: function() {
+                return ajax({
+                    url: &quot;/api/session&quot;
+                });
+            }
+        },
+
+        email: &quot;string&quot;,
+        password: &quot;string&quot;,
+        signUp: function(event) {
+            event.preventDefault();
+            this.sessionPromise = ajax({
+                url: &quot;/api/users&quot;,
+                type: &quot;post&quot;,
+                data: {
+                    email: this.email,
+                    password: this.password
+                }
+            }).then(function(user) {
+                return {user: user};
+            });
+        },
+
+        logOut: function() {
+            this.sessionPromise = ajax({
+                url: &quot;/api/session&quot;,
+                type: &quot;delete&quot;
+            }).then(function() {
+                return Promise.reject({message: &quot;Unauthorized&quot;});
+            });
+        },
+
+        page: {default: &quot;login&quot;},
+        logIn: function(event) {
+            event.preventDefault();
+            this.sessionPromise = ajax({
+                url: &quot;/api/session&quot;,
+                type: &quot;post&quot;,
+                data: {
+                    user: {
+                        email: this.email,
+                        password: this.password
+                    }
+                }
+            });
+
+            this.logInError = null;
+            this.sessionPromise.catch(function(error) {
+                this.logInError = error;
+            }.bind(this));
+        },
+        logInError: &quot;any&quot;
+    }
+});
+
+</code></pre>
+<div line-highlight='83-85,145-150,only'></div>
+<h2>Result</h2>
+<p>When finished, you should see something like the following CodePen:</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="OaOxEW" data-default-tab="js,result" data-user="bitovi" data-pen-title="Signup and Login (Simple) [Finished]" class="codepen">See the Pen <a href="https://codepen.io/bitovi/pen/OaOxEW/">Signup and Login (Simple) [Finished]</a> by Bitovi (<a href="https://codepen.io/bitovi">@bitovi</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+</section>
+
+  
+
+
+<script type="text/javascript">
+  window.docObject = {"src":{"path":"docs/can-guides/commitment/recipes/signup-simple/signup.md"},"description":"This guide walks through building simple signup, login forms and a logout button.   \n\n","name":"guides/recipes/signup-simple","title":"Signup and Login (Simple)","type":"page","parent":"guides/recipes","comment":" ","pathToRoot":"../../.."};
+</script>
+</article>
+      
+        <footer><p>CanJS is part of <a href="https://donejs.com" target="_blank">DoneJS</a>. Created and maintained by the core <a href="https://donejs.com/About.html#team" target="_blank">DoneJS team</a> and <a href="https://www.bitovi.com" target="_blank">Bitovi</a>. <strong>Currently 5.21.6.</strong></p>
+</footer>
+      
+    </div>
+  </div>
+</div>
+<survey-ad>
+  <button aria-label="Close" class="close" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <a href="https://donejs.com/survey.html" target="_blank">
+    Help us improve CanJS by taking our community survey
+  </a>
+</survey-ad>
+
+
+		
+			<script>
+				steal = {
+				  	instantiated: {
+				    	"bundles/bit-docs-site/static.css!$css" : null
+				  	}
+			  	};
+			</script>
+			<script type='text/javascript' data-main="bit-docs-site/static" src="../../static/steal.production.js"></script>
+		
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+		<!-- root-level elements with attributes necessary for the app -->
+		<div path-prefix="../.."></div>
+
+	</body>
+</html>

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<!--####################################################################
+	THIS IS A GENERATED FILE — ANY CHANGES MADE WILL BE OVERWRITTEN
+
+	INSTEAD CHANGE:
+	source: docs/can-canjs/canjs.md
+	@page canjs
+######################################################################## -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CanJS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+		<link rel="stylesheet" type="text/css" href="doc/static/bundles/bit-docs-site/static.css">
+		<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="/docs/images/canjs_favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="docs/images/canjs_favicon_57x57.png">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="docs/images/canjs_favicon_57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="docs/images/canjs_favicon_72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="docs/images/canjs_favicon_114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="docs/images/canjs_favicon_128x128.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="docs/images/canjs_favicon_144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="docs/images/canjs_favicon_152x152.png">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+	  	<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+	
+	
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-2302003-11', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+</head>
+	<body>
+		<input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+		<label for="nav-trigger">Menu</label>
+	  	<div id="everything">
+  <div id="left" class="column">
+    <div class="top-left">
+      
+          <div class="brand">
+	<div class="logo">
+		<a href="index.html" alt="CanJS"></a>
+		<div class="dropdown project-dropdown">
+			<a href="https://donejs.com/">DoneJS</a>
+			<a href="https://stealjs.com/">StealJS</a>
+			<a href="https://jquerypp.com/">jQuery++</a>
+			<a href="https://funcunit.com/">FuncUnit</a>
+			<a href="https://documentjs.com/">DocumentJS</a>
+		</div>
+	</div>
+	<div class="version">
+		<div class="version-number">
+			5.21.6
+		</div>
+		<div class="dropdown version-dropdown">
+			
+				<a href="https://v4.canjs.com">4.3.0</a>
+			
+				<a href="https://v3.canjs.com">3.13.1</a>
+			
+				<a href="https://v2.canjs.com">2.3.35</a>
+			
+		</div>
+	</div>
+</div>
+<div class="search-bar">
+	<div class="search-wrap" style="display:none;">
+		<span class="search-icon"></span>
+		<input
+			type="text"
+			size="6"
+			class="search"
+			placeholder="Search"
+			autocomplete="off"
+			autocorrect="off"
+			autocapitalize="none"
+			spellcheck="false"/>
+			<span class="search-icon-cancel"></span>
+	</div>
+</div>
+
+
+      
+    </div>
+    <div class="bottom">
+      <div class="nav-menu">
+        <div class="social-side-container">
+          <ul class="social-side">
+  <li>
+    <a class="header-mobile github" href="https://github.com/canjs/canjs" target="_blank"><img class="social-icon-small" src="docs/images/github.png">Github</a>
+  </li>
+  <li>
+    <a class="header-mobile twitter" href="https://twitter.com/canjs" target="_blank"><img class="social-icon-small" src="docs/images/twitter.png">Twitter</a>
+  </li>
+</ul>
+<ul class="social-side">
+  <li>
+    <a class="header-mobile" href="https://gitter.im/canjs/canjs" target="_blank">Chat</a>
+  </li>
+  <li>
+    <a class="header-mobile" href="http://forums.donejs.com/c/canjs" target="_blank">Forum</a>
+  </li>
+</ul>
+
+        </div>
+        
+            
+	<ul>
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="doc/about.html"
+							title="Learn about CanJS’s mission, technical highlights, who uses CanJS, and our future roadmap.">
+							About
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="doc/guides.html"
+							title="Welcome to CanJS! These guides are here to help you master CanJS development, get involved with the CanJS community,
+and contribute back to CanJS.">
+							Guides
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="doc/api.html"
+							title="Welcome to the CanJS API documentation! This page is a CHEAT-SHEET for the most common APIs within CanJS. Read the
+technology-overview page for background on the following APIs.">
+							API Docs
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="doc/community.html"
+							title="Get involved with one of the most inviting communities on the internet!">
+							Community
+						</a>
+						
+
+					</li>
+				
+			
+		
+			
+				
+					<li class="
+           						
+           						">
+						<a class="page"
+							href="doc/guides/contribute.html"
+							title="Learn how to contribute to CanJS!">
+							Contributing
+						</a>
+						
+
+					</li>
+				
+			
+		
+	</ul>
+
+
+        
+      </div>
+      <div class="search-results-container">
+	<div class="search-results-wrap"></div>
+</div>
+
+    </div>
+  </div>
+  <div id="right" class="column">
+    <div class="top-right">
+      <div class="top-right-top">
+	<ul class="top-right-bitovi">
+	  	<li class="dropdown">
+	    	<a href="https://www.bitovi.com" class="bitovi icon-bits">Bitovi</a>
+	    	<ul class="dropdown-menu">
+	      		<li><a href="https://www.bitovi.com/">Bitovi.com</a></li>
+	      		<li><a href="https://www.bitovi.com/blog">Blog</a></li>
+	      		<li><a href="https://www.bitovi.com/design">Design</a></li>
+	      		<li><a href="https://www.bitovi.com/development">Development</a></li>
+	      		<li><a href="https://www.bitovi.com/training">Training</a></li>
+	      		<li><a href="https://www.bitovi.com/open-source">Open Source</a></li>
+	      		<li><a href="https://www.bitovi.com/about">About</a></li>
+	      		<li><a href="https://www.bitovi.com/contact">Contact Us</a></li>
+	    	</ul>
+	  	</li>
+	</ul>
+	<div class="brand">
+		<div class="logo">
+			<a href="index.html" alt="CanJS"></a>
+		</div>
+	</div>
+	<ul class="top-right-links">
+  <li>
+    <a href="https://gitter.im/canjs/canjs">Chat</a>
+  </li>
+  <li>
+    <a href="http://forums.donejs.com/c/canjs">Forum</a>
+  </li>
+  <li>
+    <a class="github-button nav-social" href="https://github.com/canjs/canjs" data-count-href="/canjs/canjs/stargazers" data-show-count="true">Star</a>
+  </li>
+  <li>
+    <a href="https://twitter.com/canjs" class="twitter-follow-button nav-social" data-show-count="true" data-show-screen-name="false">Follow @canjs</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </li>
+</ul>
+</div>
+<div class="breadcrumb">
+	
+	
+	<li><a href="index.html">CanJS</a></li>
+	
+	<li class="breadcrumb-dropdown-separator"> / </li>
+	<li class="breadcrumb-dropdown breadcrumb-on-this-page">
+		<a> On this page</a>
+		<ul class="on-this-page"></ul>
+	</li>
+	<div class="nav-toggle" title="Back to top"></div>
+</div>
+
+
+    </div>
+    <div class="bottom">
+      <article>
+  <section class="title">
+	<div class="page-type">
+		<h1>CanJS</h1>
+			<ul class="title-social">
+				
+				<li>
+					<a class="npm-button" href="https://www.npmjs.com/package/can">
+						<img src="https://img.shields.io/badge/npm%20package-5.21.6-brightgreen.svg" alt="npm package badge" />
+					</a>
+				</li>
+				<li>
+					<a class="github-button nav-social" href="https://github.com/canjs/canjs" data-show-count="true">Star</a>
+				</li>
+				
+				
+				<li>
+					<a class="button-link" href="//github.com/canjs/canjs/edit/master/docs/can-canjs/canjs.md">Edit on GitHub</a>
+				</li>
+				
+			</ul>
+	</div>
+	<div class="clear-both"></div>
+	
+  
+	<section class="description">
+    <p>CanJS is a client-side JavaScript framework used to build rich web interfaces. It provides <a href="./doc/guides/technology-overview.html#Key_ValueObservables">state-management</a>, <a href="./doc/guides/technology-overview.html#ObservablesandHTMLElements">templates</a>, <a href="./doc/guides/technology-overview.html#Components">custom elements</a>, and a whole bunch more.</p>
+<p>CanJS makes it easy to to do the common stuff, while helping you build the impossible.</p>
+
+</section>
+
+  
+	
+</section>
+<section class="on-this-page-table">
+	<!--<h2 class="on-this-page-title" data-skip>Page Content</h2>-->
+</section>
+
+
+
+
+
+
+
+
+
+
+  
+    <section class="body">
+    <div class="hero-images">
+    <img
+        class="tortoise"
+        srcset="docs/images/home/Home-Tortoise-color.png 1x, docs/images/home/Home-Tortoise-color-x2.png 2x"
+        src="docs/images/home/Home-Tortoise-color.png"
+        style=""/>
+    <img
+        class="hare"
+        srcset="docs/images/home/Home-Hare-color.png 1x, docs/images/home/Home-Hare-color-x2.png 2x"
+        src="docs/images/home/Home-Tortoise-color.png"/>
+</div>
+<div style="text-align: center; color: gray">Why is our logo a tortoise? Read the short fable <a href="http://read.gov/aesop/025.html">The Hare & the Tortoise</a> by <a href="https://en.wikipedia.org/wiki/Aesop%27s_Fables">Aesop</a> to find out.</div>
+<h2>Easy to do the common stuff</h2>
+<p>CanJS starts with a familiar object-oriented approach to making
+custom elements. Let's say you want to create a page that counts clicks like the following: (<em>click the button</em>):</p>
+<p style="border: 1px solid #ccc; padding: 15px;"><my-counter></my-counter></p>
+<p>The code for that <u>entire</u> page looks like this:</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;my-counter&gt;&lt;/my-counter&gt;
+
+&lt;script type=&quot;module&quot;&gt;
+import { Component } from &quot;//unpkg.com/can@5/core.mjs&quot;;
+
+Component.extend({
+    tag: &quot;my-counter&quot;,
+    view: `
+        Count: &lt;span&gt;{{this.count}}&lt;/span&gt;
+        &lt;button on:click=&quot;this.increment()&quot;&gt;+1&lt;/button&gt;
+    `,
+    ViewModel: {
+        count: {default: 0},
+        increment() {
+            this.count++;
+        }
+    }
+});
+&lt;/script&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Yes, you do <strong>not</strong> need a build system to get started with CanJS! Copy the code above into your favorite HTML page or
+<a href="https://codepen.io/justinbmeyer/pen/VdJVbe?editors=1010">play with it in a CodePen</a>.</p>
+<p>This page has 3 main parts.</p>
+<p><em>First</em>, it places the <code>&lt;my-counter&gt;</code> custom element (which will be defined later) in the page.</p>
+<pre><code class="language-html">&lt;my-counter&gt;&lt;/my-counter&gt;
+</code></pre>
+<p><em>Next</em>, the page imports <a href="doc/can-component.html" title="Create a custom element that can be used to manage widgets or application logic.">Component</a> from the CanJS module.  Read <a href="doc/guides/setup.html" title="Learn how to install CanJS in your environment.">Setting Up CanJS</a>
+for alternative ways to load CanJS.</p>
+<pre><code class="language-html">&lt;script type=&quot;module&quot;&gt;
+import { Component } from &quot;//unpkg.com/can@5/core.mjs&quot;;
+...
+&lt;/script&gt;
+</code></pre>
+<p><em>Finally</em>, the page defines the <code>&lt;my-counter&gt;</code> element
+by extending <a href="doc/can-component.html" title="Create a custom element that can be used to manage widgets or application logic.">Component</a> with:</p>
+<ul>
+<li>A <a href="doc/can-component.prototype.tag.html" title="Specifies the HTML tag (or node-name) the can-component will be created on.">tag</a> for the name of the custom element for which you want to define.</li>
+<li>A <a href="doc/can-component.prototype.view.html" title="Provides a view to render directly within the component’s element. The view is rendered with the
+component’s can-component::ViewModel instance.  &lt;content/&gt; elements within the view are replaced by the source elements within the component’s tag.">view</a> that provides the HTML content
+of the custom element. The <a href="doc/can-stache.html" title="Live binding templates.">can-stache</a> <code>view</code> supports live binding, event bindings, and two-way bindings.</li>
+<li>A <a href="doc/can-component.prototype.ViewModel.html" title="Provides or describes a constructor function that provides values and methods
+to the component’s view. The constructor function
+is initialized with values specified by the component element’s
+data bindings.">ViewModel</a> that defines the methods and stateful properties available to
+the <code>view</code>.</li>
+</ul>
+<pre><code class="language-js">Component.extend({
+    tag: &quot;my-counter&quot;,
+    view: `
+        Count: &lt;span&gt;{{this.count}}&lt;/span&gt;
+        &lt;button on:click=&quot;this.increment()&quot;&gt;+1&lt;/button&gt;
+    `,
+    ViewModel: {
+        count: {default: 0},
+        increment() {
+            this.count++;
+        }
+    }
+});
+</code></pre>
+<style>
+  my-counter button {margin-left: 15px;}
+</style>
+<script type="text/steal-module">
+const Component = require("can-component");
+Component.extend({
+    tag: "my-counter",
+    view: `
+        Count: <span>{{this.count}}</span>
+        <button on:click="this.increment()">+1</button>
+    `,
+    ViewModel: {
+        count: {default: 0},
+        increment() {
+            this.count = this.count + 1;
+        }
+    }
+});
+</script>
+<style>
+.code-slide pre {
+    display: inline-block;
+}
+.code-slide .article pre code {
+    display: inline-block;
+}
+.code-slide div.code-toolbar {
+    display: inline-block;
+}
+.code-slide .line-numbers-rows {
+    display: none;
+}
+.code-slide pre[class*=language-].line-numbers code {
+    padding: 0 1em;
+}
+.titled-list h3 {
+    margin-top: 0px;
+}
+</style>
+<p><br/><br/>
+Ready to go? Get started with one of the tutorials below:</p>
+<div class="getting-started-icons">
+    <div class="titled-list">
+        <h3>Learn more</h3>
+        <ul>
+            <li>
+                <a href="doc/guides/technology-overview.html">
+                    <div>
+                        <img src="docs/images/home/tech-overview.svg">
+                    </div>
+                    Technology Overview
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="or-separator">
+        or
+    </div>
+    <div class="titled-list">
+        <h3>Start from scratch</h3>
+        <ul>
+            <li>
+                <a href="doc/guides/setup.html">
+                    <div>
+                        <img src="docs/images/home/gear.svg">
+                    </div>
+                    Setting Up CanJS
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="or-separator">
+        or
+    </div>
+    <div class="titled-list">
+        <h3>Build a demo app</h3>
+        <ul>
+            <li>
+                <a href="doc/guides/chat.html" title="Learn how to build a real-time chat app.">
+                    <div>
+                        <img src="docs/images/home/chat-bubble.svg">
+                    </div>
+                    Chat Guide
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="clear-both"></div>
+</div>
+<h2>Build the impossible</h2>
+<p>For over 10 years, CanJS has been used to build production applications for almost every
+use case — from massive online stores, to small mobile apps. To help you build whatever comes your way, CanJS helps you:</p>
+<ul>
+<li><a href="#expert">become an expert quickly</a>,</li>
+<li><a href="#solve-problems">solve difficult problems</a>, and</li>
+<li><a href="#maintain">maintain your app over years</a>.</li>
+</ul>
+<h3 id='expert'>Become an expert quickly</h3>
+<p>Learning a new framework is hard. Your needs and experiences
+don't fit a one-size-fits-all solution. Our long list of guides are
+organized in a skill tree as follows, so you <em>level up</em> faster by taking the
+guide that meets your needs.</p>
+<p><a href="./doc/guides.html">
+<img src="./docs/can-canjs/skill-tree.png" class='bit-docs-screenshot'/>
+</a></p>
+<p>We add a new guide every 6 weeks. <a href="http://twitter.com/canjs">Let us know</a> what you want to learn next!</p>
+<h3 id='solve-problems'>Solve difficult problems</h3>
+<p>CanJS has been used to build everything so it’s both flexible and has a
+wide variety of extensions and plugins that solve all sorts of problems.</p>
+<p><strong>Flexible Programming Styles</strong></p>
+<p>Manage state in the way that fits your needs best. For example,
+you can use <strong>imperative</strong> object oriented programming and scale up
+to <a href="doc/can-kefir.html" title="Integrate KefirJS streams directly within can-stache and other parts of CanJS.">Functional Reactive Programming with streams</a>.</p>
+<div class="code-slide">
+<pre><code class="language-js">// Imperative
+DefineMap.extend({
+  name: &quot;string&quot;,
+  nameChangeCount: {default: 0},
+  updateName(name){
+    this.name = name;
+    this.nameChangeCount++;
+  }
+});
+
+
+
+
+</code></pre>
+<pre><code class="language-js">// Imperative setter
+DefineMap.extend({
+  name: {
+    set(name) {
+      this.nameChangeCount++;
+      return name;
+    }
+  },
+  nameChangeCount: {default: 0}
+});
+
+
+
+</code></pre>
+<pre><code class="language-js">// Declarative light-weight streams
+DefineMap.extend({
+    name: &quot;string&quot;,
+    nameChangeCount: {
+        value({listenTo, resolve}) {
+            let count = resolve(0);
+            listenTo(&quot;name&quot;, () =&gt; {
+                resolve(++count);
+            });
+        }
+    }
+})
+</code></pre>
+<pre><code class="language-js">// Declarative Kefir streaming properties
+DefineMap.extend({
+    name: &quot;string&quot;,
+    nameChangeCount: {
+        stream(){
+            return this.stream(&quot;.name&quot;).scan((prev) =&gt; {
+                return prev+1;
+            },0)
+        }
+    }
+})
+</code></pre>
+<pre><code class="language-js">// Solo Kefir streams
+const name = Kefir.emitterProperty();
+
+const nameChangeCount = name.scan(function(prev){
+    return prev+1;
+},0);
+
+
+
+
+
+
+</code></pre>
+</div>
+<p><strong>Extensions and Plugins</strong></p>
+<p>CanJS has many extensions and plugins that go beyond
+state management and templates:</p>
+<ul>
+<li><a href="doc/can-route.html" title="Manage browser history and client state by synchronizing the window.location.hash with an observable. See the Routing for in depth examples.">Hashchange</a> and <a href="doc/can-route-pushstate.html" title="An observable that can be used as can-route's can-route.urlData.">pushstate</a> routing</li>
+<li>A <a href="doc/can-connect.html" title="can-connect provides persisted data middleware. Assemble powerful model layers from fully modularized behaviors (i.e. plugins).">service &amp; data modeling </a> layer that has plugins for:
+<ul>
+<li><a href="doc/can-connect/real-time/real-time.html" title="Update lists to include or exclude instances based
+on set logic.">real-time</a></li>
+<li><a href="doc/can-connect/data/combine-requests/combine-requests.html" title="Combines multiple incoming lists requests into a single list request when possible.">minimizing requests</a></li>
+<li><a href="doc/can-connect/cache-requests/cache-requests.html" title="Cache response data and use it to prevent unnecessary future requests or make future requests smaller.">caching</a> and <a href="can-connect/fall-through-cache/fall-through-cache">fall-through-caching</a></li>
+<li><a href="doc/can-connect/can/ref/ref.html" title="Handle references to instances in the data returned by the server. Allows several means of loading referenced instances, determined on-the-fly.">relationships</a></li>
+<li><a href="doc/can-ndjson-stream.html" title="Parses an NDJSON stream into a stream of JavaScript objects.">Streaming NDJSON fetch responses</a></li>
+</ul></li>
+<li><a href="doc/can-fixture.html" title="Intercept AJAX requests and simulate the response.">Service simulation</a></li>
+<li><a href="doc/can-define-validate-validatejs.html" title="Adds validation methods and observables to a map using validate.js.">Validation</a></li>
+<li><a href="https://github.com/bitovi/ylem#readme">React integration</a></li>
+<li><a href="doc/can-control.html" title="Create organized, memory-leak free, rapidly performing, stateful controls with declarative event binding. Use Control to create UI
+controls like tabs, grids, and context menus,
+and organize them into higher-order business rules with
+can.route. It can serve as both a traditional view and a traditional controller.">Memory safe declarative event binding</a></li>
+</ul>
+<p>There are also extensions to state management:</p>
+<ul>
+<li><a href="doc/can-observe.html" title="Create observable objects, arrays, and functions that work like plain JavaScript objects, arrays, and functions.">Proxy-based observables</a></li>
+<li><a href="doc/can-debug.html" title="Useful debugging utilities.">debugging tools</a></li>
+</ul>
+<p>And to views:</p>
+<ul>
+<li><a href="doc/can-stache-converters.html" title="Provides a set of converters useful for two-way binding with form elements such as &lt;input&gt; and &lt;select&gt;.">Converters that simplify two-way bindings</a></li>
+<li><a href="doc/can-stache-route-helpers.html" title="Adds routeUrl and routeCurrent helpers to stache.">Routing helpers for the view</a></li>
+</ul>
+<p>If you need even more 🔥, check out CanJS’s parent framework,
+<a href="http://donejs.com"><img src="https://www.bitovi.com/hubfs/Imported_Blog_Media/donejs-logo-ie.png" style="width: 100px; position: relative; top: 7px;"/></a>,
+which adds:</p>
+<ul>
+<li>iOS, Android, and desktop builds</li>
+<li>Server-side rendering (Isomorphic / UniversalJS)</li>
+<li>Progressive loading</li>
+<li>Continuous Integration (Testing)</li>
+<li>Continuous Deployment</li>
+<li>Code generators</li>
+</ul>
+<p><strong>Flexible Pieces</strong></p>
+<p>If you can't find what you need, you can build it! CanJS has all of
+its inner workings exposed and documented. Integrating
+other technology (like <a href="https://github.com/bitovi/ylem#readme">React</a> and <a href="doc/can-kefir.html" title="Integrate KefirJS streams directly within can-stache and other parts of CanJS.">Kefir</a> streams)
+and non-DOM APIs (like <a href="doc/guides/recipes/cta-bus-map.html" title="This guide walks you through showing Chicago Transit Authority (CTA) bus locations on a Google Map.">Google Map</a> and <a href="doc/guides/recipes/canvas-clock.html" title="This guide walks you through building a clock with the Canvas API.">Canvas</a>)
+straightforward.</p>
+<p>Useful low-level APIs:</p>
+<ul>
+<li><a href="doc/can-reflect.html" title="Perform operations and read information on unknown data types.">can-reflect</a> - This is the <a href="https://lodash.com/">Lodash</a> of CanJS.  It lets you perform operations and
+read information on data.  But unlike Lodash, <a href="doc/can-reflect.html" title="Perform operations and read information on unknown data types.">can-reflect</a> is able to work with
+any data type.  For example, you can
+assign all key-values from a <a href="doc/can-define/map/map.html" title="Create observable objects.">DefineMap</a> to a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map" title="Map">Map</a>:
+<pre><code class="language-js">const meDefineMap = new DefineMap({name: &quot;Justin&quot;});
+const meMap = canReflect.assign( new Map(), meDefineMap );
+meMap.get(&quot;name&quot;) //-&gt; &quot;Justin&quot;
+</code></pre></li>
+<li><a href="doc/can-diff.html" title="Utilities for comparing and applying differences between data structures.">can-diff</a> - Diff objects and arrays.</li>
+<li><a href="doc/can-dom-events.html" title="Listen to DOM events and special events, and register special events.">can-dom-events</a> - Listen to DOM events, including custom events, using event delegation.</li>
+<li><a href="doc/can-dom-mutate.html" title="Dispatch and listen for DOM mutations.">can-dom-mutate</a> - MutationObserver polyfill.</li>
+<li><a href="doc/can-ajax.html" title="Make an asynchronous HTTP (AJAX) request.">can-ajax</a> - jQuery-like XHR helper.</li>
+<li><a href="doc/can-globals.html" title="An environment agnostic container for global variables. Useful for testing and server-side rendering (SSR), typically used internally by CanJS.">can-globals</a> - Feature detection and storage of environmental globals.</li>
+<li><a href="doc/can-key-tree.html" title="Store values in a tree structure.">can-key-tree</a> - Tree datatype.</li>
+<li><a href="doc/can-string.html" title="String utilities.">can-string</a> - String helpers.</li>
+<li><a href="doc/can-local-store.html" title="Create, update, delete and query data saved in localStorage.">can-local-store</a> - localStorage database.</li>
+<li><a href="doc/can-key.html" title="Utilities that read and write nested properties on objects and arrays.">can-key</a> - get/set/delete nested properties.</li>
+</ul>
+<p>Useful integration APIs:</p>
+<ul>
+<li><a href="doc/can-symbol.html" title="Symbols used to detail how CanJS may operate on different objects
+CanJS has a consistent internal interface for objects to interact with each other, and this is also important for interop
+with external libraries.  CanJS uses symbols to identify object types, property access methods, and for event
+handling.
+can-symbol also has a polyfill function that will fake symbols on unsupported platforms.">can-symbol</a> - Decorate objects with symbols to make them work with <a href="doc/can-reflect.html" title="Perform operations and read information on unknown data types.">can-reflect</a>.</li>
+<li><a href="doc/can-dom-events.html" title="Listen to DOM events and special events, and register special events.">can-dom-events</a> - Create custom events.</li>
+<li><a href="doc/can-queues.html" title="A light weight queue system for scheduling tasks.">can-queues</a> - Schedule tasks to run in a particular order.</li>
+<li><a href="doc/can-observation-recorder.html" title="Specify how to listen to changes in a value being read and record those specifications between two points in time.
+Record observables being read and indicate how to listen to changes
+in a value being read.">can-observation-recorder</a> - Track when observables are read.</li>
+</ul>
+<h3 id='maintain'>Maintain your app over years</h3>
+<p>CanJS is dedicated to supporting you and your
+application long term. As technology progresses and
+tastes change, your code evolves too so you aren’t left
+maintaining 💩.</p>
+<p><img src="./docs/can-guides/images/introduction/mission-stability-upgrade-new.png"></p>
+<p>We've kept folks releasing for <strong>10</strong> years by:</p>
+<ul>
+<li>Avoiding breaking changes for as long as possible by maintaining CanJS in <a href="./doc/guides/technical.html#IndependentRepositoriesandPackages">independent repositories</a>.</li>
+<li>Experimenting with changes (like <a href="doc/can-observe.html" title="Create observable objects, arrays, and functions that work like plain JavaScript objects, arrays, and functions.">can-observe</a>) before promoting them as the way to
+build new applications.</li>
+<li>Making the upgrade process as easy as possible with deprecation warnings, <a href="doc/migrate-4.html" title="This guide walks you through the step-by-step process to upgrade a 3.x app to CanJS 4.">migration guides</a>,
+and <a href="doc/guides/upgrade/using-codemods.html" title="Learn how to migrate your app to CanJS 3 using can-migrate.">codemods</a> (scipts that rewrite your code for you).</li>
+<li>Focusing on what matters to users with a <a href="https://donejs.com/survey.html">survey</a> every
+six weeks.</li>
+<li>Being supported by <a href="http://bitovi.com">Bitovi</a>, whose bottom line <em>is</em> open source,
+not a side-project.</li>
+</ul>
+<h2>Missing Something?</h2>
+<p>Is there an itch that CanJS doesn’t scratch?  Let us know
+on <a href="https://www.bitovi.com/community/slack">Slack</a> (<a href="https://bitovi-community.slack.com/messages/CFC22NZ8A">#canjs channel</a>)
+or the <a href="https://forums.bitovi.com/c/canjs">forums</a>.
+We like contributions of all sorts.  Read the <a href="doc/guides/contribute.html" title="Learn how to contribute to CanJS!">Contributing</a> guide for more details.</p>
+<h2>Love Something?</h2>
+<p>Let us know by giving us a star on <a href="https://github.com/canjs/canjs">GitHub</a> and following on <a href="https://twitter.com/canjs">Twitter</a>.  If there’s a particular package you like, make sure to star that too. Check out the <a href="doc/guides/contributing/evangelism.html" title="Learn about resources that can help you spread the word about CanJS.">Evangelism Guide</a> on
+how to help spread the word!</p>
+
+</section>
+
+  
+
+
+<script type="text/javascript">
+  window.docObject = {"src":{"path":"docs/can-canjs/canjs.md"},"description":" \nCanJS is a client-side JavaScript framework used to build rich web interfaces. It provides [state-management](./doc/guides/technology-overview.html#Key_ValueObservables ), [templates](./doc/guides/technology-overview.html#ObservablesandHTMLElements ), [custom elements](./doc/guides/technology-overview.html#Components), and a whole bunch more.  \n\nCanJS makes it easy to to do the common stuff, while helping you build the impossible.\n\n","name":"canjs","title":"CanJS","type":"page","dest":"../index","outline":"0","package":{"name":"can","version":"5.21.6","main":"can.js","scripts":{"preversion":"npm test","version":"git commit -am \"Update dist for release\" && git checkout -b release && git add -f dist/","postversion":"git push --tags && git checkout - && git branch -D release && git push","testee":"testee test/index.html --browsers firefox","testee-builders":"testee test/builders/test.html --browsers firefox","testee-production":"testee test/production.html --browsers firefox","testee-global-build":"testee test/global-build.html --browsers firefox","http-server":"http-server -p 3000 --silent","test":"npm run test-development && npm run test-production && npm run test-builders && npm run test-global-build","test-builders":"npm run build-webpack-test && npm run testee-builders","test-development":"npm run testee","test-global-build":"npm run build && npm run testee-global-build","test-local":"npm run build && npm run testee","test-production":"npm run build-tests && npm run testee-production","test-sauce-labs":"node test/test-sauce-labs.js","release:pre":"npm version prerelease && npm run build && npm publish --tag=pre","release:patch":"npm version patch && npm run build && npm publish","release:minor":"npm version minor && npm run build && npm publish","release:major":"npm version major && npm run build && npm publish","build":"node build.js && npm run make-copy-of-globals-for-can4-compat","build-tests":"node test/build.js","build-webpack-test":"webpack -o test/builders/webpack/bundle.js test/builders/webpack/index.js","document":"npm run deps-bundle && bit-docs","document:force":"npm run deps-bundle && bit-docs -fd","deps-bundle":"node build-dev-bundle","make-copy-of-globals-for-can4-compat":"echo 'console.warn(\"This build is deprecated. Please update your URLs to the version of CanJS you intend to use, such as https://unpkg.com/can@4/dist/global/can.js\");' | cat - dist/global/core.js > dist/global/can.js && echo 'console.warn(\"This build is deprecated. Please update your URLs to the version of CanJS you intend to use, such as https://unpkg.com/can@4/dist/global/can.all.js\");' | cat - dist/global/everything.js > dist/global/can.all.js"},"title":"CanJS","description":"MIT-licensed, client-side, JavaScript framework that makes building rich web applications easy.","keywords":["CanJS","DoneJS"],"author":{"name":"Bitovi","email":"contact@bitovi.com","web":"http://bitovi.com/"},"homepage":"http://canjs.com/","repository":{"type":"git","url":"git@github.com:canjs/canjs.git","github":"https://github.com/canjs/canjs"},"dependencies":{"can-ajax":"2.1.1","can-assign":"1.3.1","can-attribute-encoder":"1.1.2","can-attribute-observable":"1.2.1","can-bind":"1.3.0","can-child-nodes":"1.2.0","can-cid":"1.3.0","can-component":"4.4.11","can-compute":"4.1.0","can-connect":"3.0.5","can-connect-feathers":"5.0.0","can-connect-ndjson":"1.0.0","can-connect-tag":"1.0.0","can-construct":"3.5.4","can-construct-super":"3.2.0","can-control":"4.4.1","can-data-types":"1.2.0","can-debug":"2.0.6","can-define":"2.7.9","can-define-backup":"2.1.1","can-define-lazy-value":"1.1.0","can-define-stream":"1.1.0","can-define-stream-kefir":"1.1.0","can-define-validate-validatejs":"1.1.0","can-deparam":"1.2.0","can-diff":"1.4.4","can-dom-data":"1.0.1","can-dom-data-state":"1.0.5","can-dom-events":"1.3.3","can-dom-mutate":"1.3.6","can-event-dom-enter":"2.2.0","can-event-dom-radiochange":"2.2.0","can-event-queue":"1.1.4","can-fixture":"3.0.4","can-fixture-socket":"2.0.0","can-fragment":"1.3.0","can-globals":"1.2.1","can-kefir":"1.1.2","can-key":"1.2.0","can-key-tree":"1.2.0","can-list":"4.2.0","can-local-store":"1.0.0","can-log":"1.0.0","can-make-map":"1.2.0","can-map":"4.3.3","can-map-compat":"1.1.0","can-map-define":"4.3.4","can-memory-store":"1.0.1","can-namespace":"1.0.0","can-ndjson-stream":"1.0.0","can-observation":"4.1.2","can-observation-recorder":"1.3.0","can-observe":"2.2.0","can-param":"1.1.1","can-parse-uri":"1.2.0","can-query-logic":"1.1.8","can-queues":"1.2.1","can-realtime-rest-model":"1.0.1","can-reflect":"1.17.9","can-reflect-dependencies":"1.1.1","can-reflect-promise":"2.2.0","can-rest-model":"1.0.1","can-route":"4.4.6","can-route-hash":"1.0.1","can-route-mock":"1.0.1","can-route-pushstate":"5.0.9","can-set-legacy":"1.0.0","can-simple-dom":"1.6.1","can-simple-map":"4.3.0","can-simple-observable":"2.4.1","can-stache":"4.17.8","can-stache-bindings":"4.8.0","can-stache-converters":"4.2.5","can-stache-key":"1.4.0","can-stache-route-helpers":"1.1.3","can-stream":"1.1.0","can-stream-kefir":"1.2.0","can-string":"1.0.0","can-string-to-any":"1.2.0","can-super-model":"1.0.1","can-symbol":"1.6.4","can-validate":"1.2.0","can-validate-interface":"1.0.2","can-validate-legacy":"2.0.0","can-validate-validatejs":"1.0.0","can-value":"1.1.0","can-vdom":"4.4.1","can-view-autorender":"5.0.3","can-view-callbacks":"4.3.6","can-view-live":"4.2.7","can-view-model":"4.0.1","can-view-nodelist":"4.3.3","can-view-parser":"4.1.2","can-view-scope":"4.13.0","can-view-target":"4.1.2","steal-stache":"4.1.2"},"devDependencies":{"bit-docs":"0.0.11","can-reflect-tests":"<2.0.0","can-test-helpers":"^1.1.1","core-js":"^2.5.7","es6-promise-polyfill":"^1.2.0","feathers":"^2.0.3","feathers-authentication-client":"^0.1.6","feathers-hooks":"^2.0.0","feathers-rest":"^1.5.0","feathers-socketio":"^1.4.2","funcunit":"^3.4.2","github":"^11.0.0","gzip-size":"^4.1.0","http-server":"^0.11.1","jquery":"2.x - 3.x","jquery-ui":"^1.12.0","kefir":"^3.8.0","prop-types":"^15.5.10","qunitjs":"^2.4.0","semver":"^5.5.0","socket.io-client":"^1.7.2","steal":"^2.0.0","steal-conditional":"^0.4.0","steal-css":"^1.2.4","steal-qunit":"^1.0.1","steal-socket.io":"^4.0.9","steal-tools":"^2.0.6","test-saucelabs":"0.0.6","testee":"^0.8.1","webpack":"^4.12.0","webpack-cli":"^3.0.7"},"demos":["http://canjs.us/#examples","http://canjs.us/recipes"],"googleAnalyticsTrackingCode":"UA-2302003-11","licenses":[{"type":"MIT","url":"http://opensource.org/licenses/mit-license.php"}],"sideEffects":false,"steal":{"npmAlgorithm":"flat","main":"can","npmIgnore":["bit-docs","testee","async","saucelabs","test-saucelabs","wd","http-server"],"meta":{"socket.io-client/dist/socket.io":{"format":"cjs"}},"configDependencies":["./node_modules/steal-conditional/conditional.js"],"plugins":["steal-stache"]},"bit-docs":{"html":{"dependencies":{"normalize.css":"^5.0.0","steal-conditional":"^0.3.6","steal-stache":"^4.0.1"},"package":{"steal":{"configDependencies":["./node_modules/steal-conditional/conditional"]}},"static":[],"templates":[]},"dependencies":{"bit-docs-glob-finder":"^0.0.5","bit-docs-dev":"^0.0.3","bit-docs-js":"^0.0.6","bit-docs-tag-sourceref":"^0.0.3","bit-docs-generate-html":"^0.11.0","bit-docs-generate-searchmap":"^0.2.0","bit-docs-html-canjs":"^2.4.1","bit-docs-prettify":"^0.3.0","bit-docs-html-highlight-line":"^0.5.3","bit-docs-tag-demo":"^0.5.3","bit-docs-tag-package":"^0.0.5","bit-docs-html-codepen-link":"^1.2.1"},"glob":{"pattern":"{node_modules,docs}/{can-*,steal-stache}/**/*.{js,md}","ignore":["node_modules/can-namespace/**/*","node_modules/can-wait/examples/**/*","node_modules/can-*/dist/**/*","node_modules/*/node_modules/**/*","node_modules/can-debug/src/draw-graph/vis.js"]},"altVersions":{"4.3.0":"https://v4.canjs.com","3.13.1":"https://v3.canjs.com","2.3.35":"https://v2.canjs.com"},"parent":"canjs","minifyBuild":true,"codepen":[["\"can\"","\"//unpkg.com/can@5/core.mjs\""],["\"can/everything\"","\"//unpkg.com/can@5/everything.mjs\""],["\"can/demos/technology-overview/mock-url\"","\"//unpkg.com/mock-url@^5.0.0/mock-url.mjs\""],["\"can/demos/technology-overview/route-mini-app-components\"","\"//unpkg.com/route-mini-app@^5.0.0/components.mjs\""],["return steal.import(","return import("],["\"can/demos/technology-overview/page-login\"","\"//unpkg.com/route-mini-app@^5.0.0/page-login.mjs\""],["`can/demos/technology-overview/page-${this.page}`","`//unpkg.com/route-mini-app@^5.0.0/page-${this.page}.mjs`"]]}},"templateRender":["<%","%>"],"comment":" ","pathToRoot":""};
+</script>
+</article>
+      
+        <footer><p>CanJS is part of <a href="https://donejs.com" target="_blank">DoneJS</a>. Created and maintained by the core <a href="https://donejs.com/About.html#team" target="_blank">DoneJS team</a> and <a href="https://www.bitovi.com" target="_blank">Bitovi</a>. <strong>Currently 5.21.6.</strong></p>
+</footer>
+      
+    </div>
+  </div>
+</div>
+<survey-ad>
+  <button aria-label="Close" class="close" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <a href="https://donejs.com/survey.html" target="_blank">
+    Help us improve CanJS by taking our community survey
+  </a>
+</survey-ad>
+
+
+		
+			<script>
+				steal = {
+				  	instantiated: {
+				    	"bundles/bit-docs-site/static.css!$css" : null
+				  	}
+			  	};
+			</script>
+			<script type='text/javascript' data-main="bit-docs-site/static" src="doc/static/steal.production.js"></script>
+		
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+		<!-- root-level elements with attributes necessary for the app -->
+		<div path-prefix="doc"></div>
+
+	</body>
+</html>
